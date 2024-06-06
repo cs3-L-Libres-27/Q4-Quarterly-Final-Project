@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url(wallpaper1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+    user-select: none;
+    text-align:center;
+    
+}
+
+
+.darkbg {
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+}
+
+.Info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.desc {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(33.333% - 40px);
+    min-width: 250px;
+    text-decoration: none;
+    color: inherit;
+    outline: none; /* Prevents blue lines */
+}
+
+.desc:hover {
+    transform: scale(1.05);
+}
+
+.desc h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #555;
+    text-align:center;
+}
+
+.desc p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align:center;
+    font-family: sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    background: #333;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
